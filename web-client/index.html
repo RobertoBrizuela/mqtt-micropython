@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor MQTT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>📡 Monitor de Temperatura y Humedad</h1>
+
+    <div class="data-container">
+        <p>🌡️ <b>Temperatura:</b> <span id="temp">--</span>°C</p>
+        <p>💧 <b>Humedad:</b> <span id="hum">--</span>%</p>
+    </div>
+
+    <h2>💡 Control de LED</h2>
+    <button class="on" onclick="sendCommand('on')">Encender LED</button>
+    <button class="off" onclick="sendCommand('off')">Apagar LED</button>
+
+    <div id="chart-container">
+        <canvas id="tempChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
