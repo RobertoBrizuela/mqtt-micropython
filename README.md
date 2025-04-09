@@ -25,14 +25,15 @@ cd mqtt-micropython
 2. Instalar **Thonny** o **uPyCraft** para cargar el firmware de MicroPython en la ESP32.
 3. Subir los archivos **main.py** y librerías necesarias (**ds1307.py, ssd1306.py, etc.**) a la ESP32.
 
-### 3️⃣ Configurar y Ejecutar el Servidor Web
+### 3️⃣ Configurar la Conexión MQTT
+El **ESP32** se conectará automáticamente al broker **EMQX**. Si deseas cambiarlo, modifica `MQTT_BROKER` en `main.py`.
+
+### 4️⃣ Configurar y Ejecutar el Servidor Web
 1. Instalar **Live Server** en VS Code.
 2. Abrir el directorio donde está el **index.html** y ejecutar:
    - Oprimir **botón derecho** en `index.html` → **Abrir con Live Server**
    - O manualmente abrir en el navegador: `http://localhost:5500`
-
-### 4️⃣ Configurar la Conexión MQTT
-El **ESP32** se conectará automáticamente al broker **EMQX**. Si deseas cambiarlo, modifica `MQTT_BROKER` en `main.py`.
+![image](https://github.com/user-attachments/assets/ddbc9376-76c7-459b-ba99-4607508c1efb)
 
 ## 🌎 Modelo Conceptual del Proyecto
-![image](https://github.com/user-attachments/assets/bdbefa11-8846-42d0-bf6e-c2c66bb2e0ec)
+![image](https://github.com/user-attachments/assets/20d40b35-5322-4744-b982-8dbd4304f951)
